@@ -4,6 +4,7 @@ body{
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif ;
     width: 100%;
+    overflow-x: hidden;
 }
 #taskbar{
     display: grid;
@@ -46,10 +47,63 @@ width: 135px;
     margin-left: 5px;
     margin-top: 1%;
 }
-#mainph{
+.imgcontainer{
+    height: 500px;
+}
+.contain {
+    box-sizing: border-box;
+    height: 100%;
+    margin-left: 1%;
+    box-shadow: 9px 16px 10px rgba(0, 0, 0, 0.361);
+}
+.contain .imgs{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    height: 100%;
     width: 100%;
-    height: 400px;
-    /* 140px */
+    animation: slider 20s ease-in-out infinite
+    alternate;
+}
+.img1{
+    background-image: url(https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/software/switch/70070000020804/e4d5cb36076e7fe810fcf1f5650c76b62a2db558b8ab3d6cb169c98e16be74bd);
+    background-color: rgb(243, 209, 145);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img2{
+    background-image: url(https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/en_US/articles/2024/mobilenews-book-ix-begins-celebration-kicks-off-in-fire-emblem-heroes/Whats_New_FEW_top_1920x1080_20241119);
+    background-color: rgb(197, 176, 176);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img3{
+    background-image: url(https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/software/switch/70010000084608/ba0572bf9d840b03bf9958809943fb3c76c3adfd6d8f2704b0f1b766f8aa4027);
+    background-color: rgb(247, 139, 139);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img4{
+    background-image: url(https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/software/switch/70010000069536/62d840ef779d25a962d0a7710a5b3e46e27df886bcfba7997ee65395da7efaac);
+    background-color: rgb(145, 243, 147);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@keyframes slider {
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(-0%);}
+    100%{transform: translateX(-0%);}
 }
 .animation{
     height: 135px;
@@ -322,3 +376,4 @@ opacity: 0.9;
     margin-left: 10px;
 }
  
+
